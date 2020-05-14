@@ -21,9 +21,8 @@ sidebar = dashboardSidebar(
                       tabName = "v_smart"), 
              menuItem(text = "Manual Version", 
                       tabName = "v_manual", 
-                      menuSubItem(text = "2D", tabName = "2D"), 
-                      menuSubItem(text = "3D", tabName = "3D")),
-             tabName = "inputs"),
+                      menuSubItem(text = "2D", tabName = "2D")), 
+                   tabName = "inputs"),
     menuItem(text = "Outputs", 
              menuSubItem(text = "Visualization", tabName = "vis"),
              menuSubItem(text = "Data Export", tabName = "export"),
@@ -286,7 +285,6 @@ body = dashboardBody(
             h2("This is the introduction page.")),
     tabItem(tabName = "v_smart", v_smart),
     tabItem(tabName = "2D", v_manual_2D),
-    tabItem(tabName = "3D", v_manual_3D),
     tabItem(tabName = "vis", page_vis),
     tabItem(tabName = "export", page_export)
   )
@@ -294,7 +292,7 @@ body = dashboardBody(
 
 shinyUI(dashboardPage(
   
-  dashboardHeader(title = "2D and 3D Sampling Simulation"),
+  dashboardHeader(title = "CPS Sampling"),
   sidebar,
   body
 ))
